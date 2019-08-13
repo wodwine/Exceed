@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="refresh" content="10">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/iconApp.png" />
+    <title>Home</title>
+</head>
+
+<body onload="getParam()">
+    <div class="container emp-profile mt-3 bg-light card" style="width:900px;">
+        <form method="post">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="profile-img icon_profile"> <img src="images/icon.png" alt="">
+                        <div class="file btn">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 mmt-4">
+                        <div class="row" style="width: 250px;">
+                            <div class="profile-head">
+                                <h5 class="mt-4" id="name_home">Undefined</h5>
+                                <h6> Please take care your love one </h6>
+                                <p class="proile-rating"><span><br></span></p>
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item"> <a class="nav-link active" id="home-tab" data-toggle="tab"
+                                            href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
+                                    </li>
+                                    <li class="nav-item"> <a class="nav-link" id="order-tab" data-toggle="tab"
+                                            href="#order" role="tab" aria-controls="profile"
+                                            aria-selected="true">Order</a> </li>
+                                    <li class="nav-item"> <a class="nav-link" id="graph-tab" data-toggle="tab"
+                                            href="#graph_home" role="tab" aria-controls="profile"
+                                            aria-selected="true">Graph</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="status"><strong>Status: </strong> <span id="status_head">Undefined</span></p>
+                </div>
+                <div class="row ml-5 set_1" style="width:864px;height: 385px;">
+                    <div class="col-md-3 mb-5 text-center">
+                        <div class="profile-work">
+                            <p><strong>Hello User!</strong></p> <a style="color: blue"
+                                href="http://www.thaiteentraining.com/survey/evaluation.php?module=detail&action=view&cid=1&id=5"
+                                target="_blank">Questionnaire</a><br>
+                            <a href="https://www.sanook.com/health/721/" target="_blank">What is depression???</a><br>
+                            <a style="color: blue"
+                                href="http://johjaionline.com/on-looker/8-%E0%B8%A7%E0%B8%B4%E0%B8%98%E0%B8%B5%E0%B8%8A%E0%B9%88%E0%B8%A7%E0%B8%A2%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%9C%E0%B8%B9%E0%B9%89%E0%B8%9B%E0%B9%88%E0%B8%A7%E0%B8%A2%E0%B9%82%E0%B8%A3%E0%B8%84%E0%B8%8B%E0%B8%B6%E0%B8%A1%E0%B9%80%E0%B8%A8%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%9C%E0%B8%A5/?fbclid=IwAR2QENz3ePuBJ-_NBIzt3kSG6aOfRrZ5QNisdTQJlpQk16YF9YJUaFKTEVY"
+                                target="_blank">How to deal with depression!!!</a><br>
+                            <a href="https://www.bumrungrad.com/th/mental-health-center-bangkok-thailand"
+                                target="_blank">Mental Health Center</a><br>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="tab-content profile-tab" id="myTabContent">
+                            <div class="tab-pane fade show active set_2" id="home" role="tabpanel"
+                                aria-labelledby="home-tab">
+                                <div class="row">
+                                    <div class="col-md-6"> <label><strong>Email</strong></label> </div>
+                                    <div class="col-md-6">
+                                        <p id="mail_home">Undefined</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6"> <label><strong>Phone</strong></label> </div>
+                                    <div class="col-md-6">
+                                        <p id="phone_home">Undefined</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6"> <label><strong>Type</strong></label> </div>
+                                    <div class="col-md-6">
+                                        <p id="type_home">Undefined</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6"> <label><strong>Bracelet Id</strong></label> </div>
+                                    <div class="col-md-6">
+                                        <p id="wid_home">Undefined</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6"> <label><strong>Bracelet Status</strong></label> </div>
+                                    <div class="col-md-6">
+                                        <p id="watch_stat_home">Undefined</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade mb-2" id="order" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="row">
+                                    <div class="col-md-1 left-icon">
+                                        <div class="input-group-text" style='width: 33px'> <i class="fa fa-lightbulb-o"
+                                                aria-hidden="true"></i> </div>
+                                    </div>
+                                    <div class="col-md-6"> <label><strong>Alert Status: </strong><span
+                                                id="status_stat">Undefined</span></label> </div>
+                                    <div class="col-md-5 right-btn">
+                                        <button type="button" class="btn btn-primary mb-1" onclick="offAlarm()">Click</button>
+                                    </div>
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"> <i class="fa fa-commenting-o ml-1"
+                                                aria-hidden="true"></i> </span>
+                                    </div>
+                                    <div class="col-md-2"> <label><strong>Message</strong></label> </div>
+                                    <input type="text" class="input-group-prepend col-md-9 mb-1" list="text_msg_home" />
+                                    <datalist id="text_msg_home">
+                                        <option>Don't do anything!</option>
+                                        <option>Please don't hurt yourself</option>
+                                        <option>I love you</option>
+                                        <option>I'll be there for you</option>
+                                        <option>Wait me!!</option>
+                                        <option>Why do you take off your bracelet?</option>
+                                        <option>Are you alright?</option>
+                                    </datalist>
+                                    <div class="input-group-prepend" style="margin-left: 500px;">
+                                        <button type="button" class="btn btn-primary mb-1"
+                                            onclick="send_msg()">send</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="graph_home" role="tabpanel" aria-labelledby="profile-tab">
+                                <img id="graph_img_home" class="border border-primary rounded graph-pic"
+                                    src="images/graph1.png">
+                                <div class="btn-group group-btn" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn btn-secondary border"
+                                        onclick="graphMed(1)">Daily</button>
+                                    <button type="button" class="btn btn-secondary border"
+                                        onclick="graphMed(2)">Weekly</button>
+                                    <button type="button" class="btn btn-secondary border"
+                                        onclick="graphMed(3)">Monthly</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><button type="button" class="btn btn-secondary border mb-1" onclick="signOut()">Log out</button></div>
+    </div>
+    </form>
+    </div>
+    <script type="text/javascript"> </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+.center {
+    position: center;
+}
+
+.set_1 {
+    padding-left: 1px;
+}
+
+.set_2 {
+    padding-left: 20px;
+}
+
+.status {
+    width: 250px;
+    padding-top: 60px;
+    padding-left: 80px;
+}
+
+.right-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.left-icon {
+
+    justify-content: flex-start;
+    margin-bottom: 1px
+}
+
+.login_icon {
+    margin: auto;
+    display: flex;
+}
+
+.icon_profile {
+    margin-left: 80px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.graph-pic {
+    width: 550px;
+    height: auto;
+}
+
+.group-btn {
+    margin-top: 5px;
+    margin-left: 175px;
+}
